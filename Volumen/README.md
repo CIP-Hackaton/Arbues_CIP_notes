@@ -22,3 +22,5 @@ departamentos = [
 La extracción de datos de la API del MIDRAGI se realizó en el notebook `VolumenDiario.ipynb`, donde se guardaron los datos en dos dataframes, diferentes pues a partir de mayo de 2020, se dejó de extraer datos de la papa PERRICHOLI. 
 
 
+La lectura la puede realizar en el notebook `LeerDatosVolumen.ipynb` donde coloqué un diccionario de dataframes.
+
