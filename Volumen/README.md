@@ -24,3 +24,5 @@ La extracción de datos de la API del MIDRAGI se realizó en el notebook `Volume
 
 La lectura la puede realizar en el notebook `LeerDatosVolumen.ipynb` donde coloqué un diccionario de dataframes.
 
+
+Al final en la carpeta `/completas` se guardaron las tablas con las papas ya unidas, recordar que perricholi solo tiene datos hasta mayor de 2020.

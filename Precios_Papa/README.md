@@ -21,3 +21,7 @@ En este directorio se procedió a extraer datos del precio de la papa:
 Del precio promedio, máximo, mínimo del mercado mayorista. 
 
 Se consideró guardar dos diferentes csv para cada tipo de precio, pues a partir de mayo del 2020, se dejó de guardar datos de la papa PERRICHOLI.
+
+
+
+Al final en la carpeta `/completo` se guardaron las tablas con las papas ya unidas, recordar que perricholi solo tiene datos hasta mayor de 2020.
