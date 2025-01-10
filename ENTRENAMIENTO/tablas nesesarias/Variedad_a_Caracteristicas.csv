@@ -1,7 +1,7 @@
-﻿Variety;Late blight (LB);Predominant tuber skin color;Predominant tuber flesh color;General tuber shape;Tuber shape depth of eyes;Dry matter (%);Growing period highland
-Perricholi;MR;White;Cream;Oblong tubers;Slightly deep eye;19;M
-Canchan-INIA;MR;Red;Pale Yellow;Rounded tubers;Slightly deep eye;23;L
-Amarilis-INIA;MR;White;Pale Yellow;Rounded tubers;Shallow eyes;21;M
-UNICA;S;Red;Cream;Oblong tubers;Shallow eyes;21;M
-Yungay;R;;;;;;
-Huayro;MR;;;;;;
+﻿Variety;Late blight (LB);Predominant tuber flesh color;Tuber shape depth of eyes;Dry matter (%);Growing period highland
+Perricholi;MR;Cream;Slightly deep eye;19;M
+Canchan-INIA;MR;Pale Yellow;Slightly deep eye;23;L
+Amarilis-INIA;MR;Pale Yellow;Shallow eyes;21;M
+UNICA;S;Cream;Shallow eyes;21;M
+Yungay;R;;;;
+Huayro;MR;;;;
