@@ -1,8 +1,10 @@
-# Extracción de datos de Precio de Papa
+# Potato Price Data Extraction
 
-En este directorio se procedió a extraer datos del precio de la papa:
+In this directory, data on potato prices was extracted as follows:
 
-### Estructura
+### Structure
+
+
 
 ```
 ├── LeerPreciosPapa.ipynb # Donde se procedió a leer los datos obtenidos en los .csv
@@ -18,10 +20,11 @@ En este directorio se procedió a extraer datos del precio de la papa:
 ```
 
 
-Del precio promedio, máximo, mínimo del mercado mayorista. 
 
-Se consideró guardar dos diferentes csv para cada tipo de precio, pues a partir de mayo del 2020, se dejó de guardar datos de la papa PERRICHOLI.
+This directory contains data for average, maximum, and minimum prices from the wholesale market.
 
+Separate `.csv` files were created for each price type because, starting in May 2020, data for the PERRICHOLI potato variety was no longer collected.
 
+### Final Notes
 
-Al final en la carpeta `/completo` se guardaron las tablas con las papas ya unidas, recordar que perricholi solo tiene datos hasta mayor de 2020.
+Consolidated tables with all potato varieties were saved in the `/completo` folder. Please note that PERRICHOLI data is available only up to May 2020.

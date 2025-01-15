@@ -1,63 +1,62 @@
-# Documentación del archivo `ENTRENAMIENTO.ipynb`
+# Documentation of the `ENTRENAMIENTO.ipynb` File
 
-## Archivos Requeridos
+## Required Files
 
-1. **Datos de Entrenamiento y Características:**
-   - `tabla_preparada_modelo.csv`: Datos principales con características y etiquetas.
-   - `Variedad_a_Caracteristicas.csv`: Información de variedades y sus características.
-   - `Variedad_a_Caracteristicas_28.csv`: Extensión de datos con características adicionales.
+1. **Training Data and Features:**
+   - `tabla_preparada_modelo.csv`: Main dataset with features and labels.
+   - `Variedad_a_Caracteristicas.csv`: Information on varieties and their features.
+   - `Variedad_a_Caracteristicas_28.csv`: Extended dataset with additional features.
 
-2. **Salida de Datos Transformados:**
-   - `Variedad_a_Caracteristicas_28_numeric.csv`: Versión numérica y codificada de las características.
-   - `df_modelo_transformed.csv`: Datos principales transformados y listos para entrenamiento.
-
----
-
-## Flujo Interno
-
-### **1. Exploración de Datos**
-   - Lectura de datos desde `tabla_preparada_modelo.csv`.
-   - Limpieza de valores nulos, verificación de tipos y distribución.
-   - Exploración de características categóricas y numéricas.
-
-### **2. Transformaciones**
-   - **One-Hot Encoding:** Variables categóricas como `Clasificacion_Climatica` y características nominales.
-   - **Mapeo Ordinal:** Columnas como `Late blight (LB)` y `Growing period highland`.
-   - **Normalización:** Escalado de valores numéricos con `MinMaxScaler`.
-   - **Filtrado:** Eliminación de variedades con datos incompletos (e.g., Yungay, Huayro).
-
-### **3. Entrenamiento**
-   - **Modelo Vector a Vector:**
-     - Características (`X`): Variables como `TEMP_MAX`, `PRECIPITACION`, etc.
-     - Etiquetas (`y`): Características relacionadas como `Dry matter (%)`, `Growing period highland`.
-   - **Red Neuronal:**
-     - Capas: 128, 64, 32 neuronas con funciones `relu` y capa de salida `linear`.
-     - Optimización: `adam` con pérdida de regresión (`mean_squared_error`).
-   - **Validación y Ajuste:** División de datos en conjuntos de entrenamiento, prueba y validación.
-
-### **4. Evaluación**
-   - Métricas para cada característica:
-     - **MSE:** Error Cuadrático Medio.
-     - **MAE:** Error Absoluto Medio.
-   - Evaluación global:
-     - MSE y MAE combinados para todas las predicciones.
-
-### **5. Guardado del Modelo**
-   - Exportación del modelo entrenado en formato Keras: `Trained_model_VectorToVector.keras`.
+2. **Transformed Data Outputs:**
+   - `Variedad_a_Caracteristicas_28_numeric.csv`: Numeric and encoded version of features.
+   - `df_modelo_transformed.csv`: Main dataset transformed and ready for training.
 
 ---
 
-## Exportaciones Finales
+## Internal Workflow
 
-1. **Tablas de Datos:**
+### **1. Data Exploration**
+   - Load data from `tabla_preparada_modelo.csv`.
+   - Clean null values, verify data types, and analyze distributions.
+   - Explore categorical and numerical features.
+
+### **2. Transformations**
+   - **One-Hot Encoding:** For categorical variables like `Clasificacion_Climatica` and nominal features.
+   - **Ordinal Mapping:** For columns like `Late blight (LB)` and `Growing period highland`.
+   - **Normalization:** Scale numerical values using `MinMaxScaler`.
+   - **Filtering:** Remove varieties with incomplete data (e.g., Yungay, Huayro).
+
+### **3. Training**
+   - **Vector-to-Vector Model:**
+     - Features (`X`): Variables such as `TEMP_MAX`, `PRECIPITACION`, etc.
+     - Labels (`y`): Related features like `Dry matter (%)`, `Growing period highland`.
+   - **Neural Network:**
+     - Layers: 128, 64, 32 neurons with `relu` activation functions and an output layer with `linear` activation.
+     - Optimization: `adam` optimizer with regression loss (`mean_squared_error`).
+   - **Validation and Fine-Tuning:** Split data into training, testing, and validation sets.
+
+### **4. Evaluation**
+   - Metrics for each feature:
+     - **MSE:** Mean Squared Error.
+     - **MAE:** Mean Absolute Error.
+   - Global evaluation:
+     - Combined MSE and MAE for all predictions.
+
+### **5. Model Saving**
+   - Export the trained model in Keras format: `Trained_model_VectorToVector.keras`.
+
+---
+
+## Final Exports
+
+1. **Data Tables:**
    - `Variedad_a_Caracteristicas_28_numeric.csv`
    - `df_modelo_transformed.csv`
 
-2. **Modelo Entrenado:**
+2. **Trained Model:**
    - `Trained_model_VectorToVector.keras`
 
-3. **Gráficas:**
-   - Distribución de características.
-   - Métricas de entrenamiento (precisión y pérdida por época).
-   - Variación y cuartiles de las columnas.
-
+3. **Graphs:**
+   - Feature distribution.
+   - Training metrics (accuracy and loss per epoch).
+   - Column variation and quartiles.

@@ -1,31 +1,30 @@
-Plan de Análisis del Notebook Clima.ipynb
+# Analysis Plan for Notebook Clima.ipynb
 
-#### Archivos Necesarios
+#### Required Files
 
-- `distritos-peru@bogota-laburbano.geojson` - Archivo con datos geoespaciales de distritos
-- `Clima.ipynb` - Notebook principal
-#### Estructura y Funcionalidad
+- `distritos-peru@bogota-laburbano.geojson` - File with geospatial data of districts
+- `Clima.ipynb` - Main notebook
 
-1. **Configuración Inicial**
-    
-    - Carga de librerías geoespaciales
-    - Configuración de Selenium para scraping
-2. **Procesamiento de Datos**
-    
-    - Lee datos GeoJSON de distritos
-    - Extrae coordenadas para cada distrito
-    - Visualiza datos en mapas
-3.  **Intento de Web Scraping**
-    
-    - Función principal: `clima_scraper_lat_lon_fecha()`
-    - Extrae datos meteorológicos de Ventusky
-    - Genera DataFrame con resultados
+#### Structure and Functionality
+
+1. **Initial Setup**
+    - Load geospatial libraries
+    - Configure Selenium for web scraping
+
+2. **Data Processing**
+    - Read GeoJSON data of districts
+    - Extract coordinates for each district
+    - Visualize data on maps
+
+3. **Web Scraping Attempt**
+    - Main function: `clima_scraper_lat_lon_fecha()`
+    - Extract meteorological data from Ventusky
+    - Generate DataFrame with results
 
 #### Output
 
-- DataFrame con datos meteorológicos:
-    - Fecha
-    - Coordenadas (lat/lon)
-    - Variables meteorológicas (temperatura min/max)
-    - Información del distrito
-
+- DataFrame with meteorological data:
+    - Date
+    - Coordinates (lat/lon)
+    - Meteorological variables (min/max temperature)
+    - District information

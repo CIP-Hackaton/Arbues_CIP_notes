@@ -1,34 +1,37 @@
-Resumen del Notebook [Prueba.ipynb](vscode-file://vscode-app/c:/Users/kikhe/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html)
+# Summary of the Notebook [Prueba.ipynb](vscode-file://vscode-app/c:/Users/kikhe/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html)
 
-Este notebook realiza el análisis y procesamiento de datos de cultivos de papa, enfocándose en:
-#### Archivos de Entrada Requeridos
+This notebook performs data analysis and processing for potato crops, focusing on the following:
 
-- `SISAGRI.csv` - Datos del sistema agrícola
-- `TEM_BIOLO_AGROBIODIVERSIDAD.dbf` - Datos de agrobiodiversidad
-- `bd_prospeccion_papa.dbf` - Datos de prospección
-- `parcelas_papa.dbf` - Datos de parcelas
+#### Required Input Files
 
-#### Funcionalidad Principal
+- `SISAGRI.csv` - Agricultural system data
+- `TEM_BIOLO_AGROBIODIVERSIDAD.dbf` - Agrobiodiversity data
+- `bd_prospeccion_papa.dbf` - Prospection data
+- `parcelas_papa.dbf` - Plot data
 
-1. **Filtrado inicial de datos**
-    
-    - Filtra datos específicos de papa del dataset SISAGRI
-    - Calcula rendimientos (cosecha/siembra)
-    - Elimina registros con valores nulos o cero
-2. **Procesamiento de datos de rendimiento**
-    
-    - Se enfoca en 6 variedades específicas de papa
-    - Calcula métricas de rendimiento
-    - Elimina datos ambiguos o incompletos
-3. **Análisis estadístico**
-    
-    - Genera estadísticas descriptivas
-    - Analiza distribución por departamentos
-    - Identifica patrones de cultivo
+---
 
-#### Outputs Generados
+#### Main Functionality
 
-- `filtrado_papa.csv` - Datos filtrados de papa
-- `papas_filtradas.csv` - Dataset final procesado con las 6 papas requeridas
-- Visualizaciones y estadísticas descriptivas
+1. **Initial Data Filtering**
+   - Filters potato-specific data from the SISAGRI dataset
+   - Calculates yields (harvest/planting ratio)
+   - Removes records with null or zero values
 
+2. **Yield Data Processing**
+   - Focuses on six specific potato varieties
+   - Calculates yield metrics
+   - Eliminates ambiguous or incomplete data
+
+3. **Statistical Analysis**
+   - Generates descriptive statistics
+   - Analyzes distribution by departments
+   - Identifies cultivation patterns
+
+---
+
+#### Generated Outputs
+
+- `filtrado_papa.csv` - Filtered potato data
+- `papas_filtradas.csv` - Final processed dataset for the six selected potato varieties
+- Visualizations and descriptive statistics

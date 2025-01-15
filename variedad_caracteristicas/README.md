@@ -1,46 +1,50 @@
-# README para Archivos de Datos
+# README for variedad_caracteristicas
 
-## Archivos Requeridos
+## Required Files
 
 1. **`Variedad_a_Caracteristicas_28.csv`**
-   - Contiene características cualitativas y cuantitativas de variedades de papa.
-   - Columnas principales:
-     - Variety: Nombre de la variedad.
-     - Late blight (LB): Resistencia a tizón tardío.
-     - Predominant tuber flesh color: Color predominante de la carne del tubérculo.
-     - Tuber shape depth of eyes: Profundidad de los ojos del tubérculo.
-     - Dry matter (%): Porcentaje de materia seca.
-     - Growing period highland: Periodo de crecimiento en tierras altas.
+   - Contains qualitative and quantitative characteristics of potato varieties.
+   - Key columns:
+     - Variety: Name of the variety.
+     - Late blight (LB): Resistance to late blight.
+     - Predominant tuber flesh color: Predominant color of tuber flesh.
+     - Tuber shape depth of eyes: Depth of tuber eyes.
+     - Dry matter (%): Percentage of dry matter.
+     - Growing period highland: Growing period in highlands.
 
 2. **`caracteristicas.csv`**
-   - Contiene datos extendidos de variedades de papa, con características adicionales.
-   - Columnas principales:
-     - Similar a las de `Variedad_a_Caracteristicas_28.csv`, con la adición de:
-       - Predominant tuber skin color: Color predominante de la piel del tubérculo.
-       - General tuber shape: Forma general del tubérculo.
+   - Contains extended data on potato varieties, with additional characteristics.
+   - Key columns:
+     - Similar to those in `Variedad_a_Caracteristicas_28.csv`, with the addition of:
+       - Predominant tuber skin color: Predominant color of tuber skin.
+       - General tuber shape: General shape of the tuber.
 
 3. **`Variedad_a_Caracteristicas_28_numeric (1).csv`**
-   - Versión numérica de `Variedad_a_Caracteristicas_28.csv`.
-   - Columnas categóricas convertidas a variables binarias o codificadas numéricamente:
-     - Late blight (LB): Codificado como 0, 1, 2, 3.
-     - Predominant tuber flesh color y Tuber shape depth of eyes: Codificadas como variables dummy.
+   - Numeric version of `Variedad_a_Caracteristicas_28.csv`.
+   - Categorical columns converted to binary or numerically encoded variables:
+     - Late blight (LB): Encoded as 0, 1, 2, 3.
+     - Predominant tuber flesh color and Tuber shape depth of eyes: Encoded as dummy variables.
 
-## Flujos Internos
+---
 
-1. **Limpieza y Conversión:**
-   - Limpieza básica de datos en columnas.
-   - Conversión de valores categóricos a numéricos para análisis cuantitativo.
-   
-2. **Agrupación y Filtrado:**
-   - Agrupación por variedad para consolidar características comunes.
-   - Inclusión de columnas adicionales en `caracteristicas.csv` para análisis más detallado.
+## Internal Workflows
 
-3. **Salida:**
-   - Datos cualitativos y cuantitativos procesados y exportados en CSV.
+1. **Cleaning and Conversion:**
+   - Basic data cleaning in columns.
+   - Conversion of categorical values to numeric for quantitative analysis.
 
-## Exportaciones Finales
+2. **Grouping and Filtering:**
+   - Grouping by variety to consolidate common characteristics.
+   - Inclusion of additional columns in `caracteristicas.csv` for more detailed analysis.
 
-- **Archivos finales generados:**
-  1. `Variedad_a_Caracteristicas_28.csv`: Datos crudos de características.
-  2. `caracteristicas.csv`: Datos extendidos con características adicionales.
-  3. `Variedad_a_Caracteristicas_28_numeric (1).csv`: Versión numérica para análisis cuantitativo.
+3. **Output:**
+   - Processed qualitative and quantitative data exported in CSV format.
+
+---
+
+## Final Exports
+
+- **Generated files:**
+  1. `Variedad_a_Caracteristicas_28.csv`: Raw data on characteristics.
+  2. `caracteristicas.csv`: Extended data with additional characteristics.
+  3. `Variedad_a_Caracteristicas_28_numeric (1).csv`: Numeric version for quantitative analysis.

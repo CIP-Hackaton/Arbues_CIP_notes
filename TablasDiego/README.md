@@ -1,40 +1,43 @@
-Resumen del Notebook [DATOS_DIEGO.ipynb](vscode-file://vscode-app/c:/Users/kikhe/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html)
+# Summary of the Notebook [DATOS_DIEGO.ipynb](vscode-file://vscode-app/c:/Users/kikhe/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html)
 
-Este notebook procesa y analiza tres conjuntos principales de datos relacionados con la agricultura en Perú.
+This notebook processes and analyzes three main datasets related to agriculture in Peru.
 
-#### Archivos de Entrada Necesarios
+---
 
-1. **Agrobiodiversidad**
-    
-    - `AGROBIODIVERSIDAD_cleaned.csv`
-2. **Concentración de Especies**
-    
-    - `Concentracion_espcies_SHP.csv`
-3. **Nevadas**
-    
-    - `[Enero-Diciembre].csv` (12 archivos, uno por mes)
+#### Required Input Files
 
-#### Funcionalidad Principal
+1. **Agrobiodiversity**
+   - `AGROBIODIVERSIDAD_cleaned.csv`
 
-1. **Análisis de Agrobiodiversidad**
-    
-    - Procesamiento de datos de variedades de papa
-    - Ubicación geográfica (lat/lon)
-    - 6012 registros con información de cultivos
-    - No lo usaremso al final
-2. **Análisis de Concentración de Especies**
-    
-    - Datos por distrito/provincia/departamento
-    - Categorización de zonas agrícolas
-    - Análisis de fuentes de Sentinel 2B
-    - No lo usaremso al final
-3. **Procesamiento de Nevadas**
-    
-    - Consolidación de datos mensuales
-    - Análisis de frecuencias por UBIGEO
-    - Generación de tabla consolidada anual
+2. **Species Concentration**
+   - `Concentracion_espcies_SHP.csv`
 
-#### Output Principal
+3. **Snowfall**
+   - `[Enero-Diciembre].csv` (12 files, one for each month)
 
-- `consolidado_frecuencia_mensual.csv` - Dataset final con frecuencias mensuales de nevadas por distrito
+---
 
+#### Main Functionality
+
+1. **Agrobiodiversity Analysis**
+   - Processes data on potato varieties
+   - Includes geographic location (lat/lon)
+   - 6,012 records with crop information
+   - **Note:** Will not be used in the final analysis
+
+2. **Species Concentration Analysis**
+   - Data by district/province/department
+   - Categorizes agricultural zones
+   - Analyzes sources from Sentinel 2B
+   - **Note:** Will not be used in the final analysis
+
+3. **Snowfall Processing**
+   - Consolidates monthly data
+   - Analyzes snowfall frequencies by UBIGEO
+   - Generates an annual consolidated table
+
+---
+
+#### Primary Output
+
+- `consolidado_frecuencia_mensual.csv` - Final dataset with monthly snowfall frequencies by district

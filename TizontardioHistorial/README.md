@@ -1,33 +1,38 @@
-### Resumen del Notebook: ZONAS DE RIESGO DEL TIZON TARDIO.ipynb
+### Summary of the Notebook: ZONAS DE RIESGO DEL TIZÓN TARDÍO.ipynb
 
-Este notebook procesa y analiza datos geoespaciales relacionados con el riesgo de tizón tardío en Perú para los años 2014-2016.
+This notebook processes and analyzes geospatial data related to the risk of late blight in Peru for the years 2014-2016.
 
-#### Archivos Necesarios
+---
 
-- `S_2014.asc`, `S_2015.asc`, `S_2016.asc` - Archivos raster con datos de presencial del Tizon Tardio
-- `distritos-peru@bogota-laburbano.geojson` - Archivo con límites de distritos
-- `consolidado_tizon_distritos.csv` - Archivo de presencia del tizon por distrito
+#### Required Files
 
-#### Estructura y Funcionalidad
+- `S_2014.asc`, `S_2015.asc`, `S_2016.asc` - Raster files with late blight presence data
+- `distritos-peru@bogota-laburbano.geojson` - File with district boundaries
+- `consolidado_tizon_distritos.csv` - File with late blight presence by district
 
-1. **Carga y Visualización de Datos**
-    
-    - Carga archivos ASC para cada año
-    - Visualiza mapas de riesgo usando matplotlib
-    - Procesa datos raster a nivel de distrito
-2. **Procesamiento Geoespacial**
-    
-    - Convierte coordenadas raster a geográficas
-    - Intersecta datos raster con límites distritales
-    - Calcula estadísticas por distrito y año
-3. **Generación de Resultados**
-    
-    - Calcula porcentajes de riesgo por distrito
-    - Genera mapas de calor por año
-    - Exporta resultados consolidados a CSV
+---
 
-#### Output Principal
+#### Structure and Functionality
 
-- DataFrame con porcentajes de riesgo por distrito para cada año
-- Mapas de calor mostrando la distribución espacial del riesgo
-- Estadísticas comparativas entre años
+1. **Data Loading and Visualization**
+   - Loads ASC files for each year
+   - Visualizes risk maps using Matplotlib
+   - Processes raster data at the district level
+
+2. **Geospatial Processing**
+   - Converts raster coordinates to geographic coordinates
+   - Intersects raster data with district boundaries
+   - Calculates statistics by district and year
+
+3. **Result Generation**
+   - Calculates risk percentages by district
+   - Generates heat maps for each year
+   - Exports consolidated results to a CSV file
+
+---
+
+#### Main Output
+
+- DataFrame with risk percentages by district for each year
+- Heat maps showing the spatial distribution of risk
+- Comparative statistics between years

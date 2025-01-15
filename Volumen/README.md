@@ -1,7 +1,6 @@
-## Exploración de datos de volumen por papa
+## Potato Volume Data Exploration
 
-
-En presente directorio se procedió a extraer datos de los departamentos con mayor cantidad de registros de papa, en específico las siguientes:
+In this directory, data extraction focused on departments with the highest records of potato production. Specifically, the following departments were considered:
 
 
 ``` py
@@ -19,10 +18,8 @@ departamentos = [
 ]
 ```
 
-La extracción de datos de la API del MIDRAGI se realizó en el notebook `VolumenDiario.ipynb`, donde se guardaron los datos en dos dataframes, diferentes pues a partir de mayo de 2020, se dejó de extraer datos de la papa PERRICHOLI. 
+Data extraction from the MIDRAGI API was conducted in the notebook VolumenDiario.ipynb, where the information was saved into two separate dataframes. This distinction was necessary because, starting in May 2020, data for the PERRICHOLI potato variety ceased to be collected.
 
+You can load the data in the notebook LeerDatosVolumen.ipynb, where a dictionary of dataframes has been provided for convenience.
 
-La lectura la puede realizar en el notebook `LeerDatosVolumen.ipynb` donde coloqué un diccionario de dataframes.
-
-
-Al final en la carpeta `/completas` se guardaron las tablas con las papas ya unidas, recordar que perricholi solo tiene datos hasta mayor de 2020.
+Finally, the combined potato data tables were saved in the /completas folder. Please note that the PERRICHOLI variety only includes data up to May 2020.

@@ -1,114 +1,114 @@
-# Sistema de Análisis y Predicción para Cultivos de Papa en Perú
+# Analysis and Prediction System for Potato Crops in Peru
 
-## 📋 Descripción General
-Este proyecto implementa un sistema integral para el análisis y predicción de cultivos de papa en Perú, combinando datos geoespaciales, climáticos y agrícolas. El sistema utiliza modelos de aprendizaje profundo y series temporales para predecir rendimientos y demanda de diferentes variedades de papa.
+## 📋 Overview
+This project implements a comprehensive system for the analysis and prediction of potato crops in Peru, integrating geospatial, climatic, and agricultural data. The system uses deep learning models and time series analysis to forecast yields and demand for various potato varieties.
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ### /ArchivosForBackend
-Contiene los modelos entrenados y tablas de relación listos para usar en producción:
-- Modelo neural principal para predicción de características de cultivo
-- Modelos SARIMA para predicción de demanda por variedad
-- Tablas de mapeo y normalización
+Contains trained models and relationship tables ready for production use:
+- Main neural model for crop characteristic prediction
+- SARIMA models for demand forecasting by variety
+- Mapping and normalization tables
 
 ### /TablasDiego
-Repositorio central de datos geográficos y climáticos:
-- Datos de agrobiodiversidad (No usaremos)
-- Mapas de concentración de especies (No usaremos)
-- Datos climatológicos procesados (temperatura, precipitación, nevada, erosion,clasificacion del clima)
-- Archivos SHP para procesamiento geoespacial
+Central repository for geographic and climatic data:
+- Agrobiodiversity data (Not used)
+- Species concentration maps (Not used)
+- Processed climatological data (temperature, precipitation, snowfall, erosion, climate classification)
+- SHP files for geospatial processing
 
 ### /ENTRENAMIENTO
-Notebooks y datos para el entrenamiento del modelo principal:
-- Modelo neural para mapeo vector-a-vector (de vector de caracteristicas del punto espacio-temporal a caracteristicas de la papa)
-- Tablas de características de variedades de papa
-- Datasets preparados para entrenamiento
+Notebooks and data for training the main model:
+- Neural model for vector-to-vector mapping (from spatiotemporal feature vectors to potato characteristics)
+- Tables of potato variety characteristics
+- Prepared datasets for training
 
 ### /Demanda
-Análisis y modelado de demanda de papa:
-- Modelos SARIMA por variedad
-- Datos históricos de precios y volumen
-- Scripts de procesamiento y preparación de datos
+Potato demand analysis and modeling:
+- SARIMA models by variety
+- Historical price and volume data
+- Data processing and preparation scripts
 
 ### /Rendimiento
-Análisis de rendimiento de cultivos:
-- Datos de SISAGRI procesados
-- Análisis de rendimiento por variedad y región
-- Datasets filtrados para modelado
+Crop yield analysis:
+- Processed SISAGRI data
+- Yield analysis by variety and region
+- Filtered datasets for modeling
 
 ### /TizontardioHistorial
-Análisis de riesgo de tizón tardío:
-- Datos históricos 2014-2016
-- Mapas de riesgo por distrito
-- Procesamiento de datos geoespaciales
+Late blight risk analysis:
+- Historical data from 2014-2016
+- District-level risk maps
+- Geospatial data processing
 
-## 🔧 Tecnologías Principales
+## 🔧 Key Technologies
 
-- Python para procesamiento de datos y modelado
-- TensorFlow/Keras para redes neuronales
-- Statsmodels para modelos SARIMA
-- GeoPandas para procesamiento geoespacial
-- Selenium para web scraping de datos climáticos (no se llego a usar)
+- Python for data processing and modeling
+- TensorFlow/Keras for neural networks
+- Statsmodels for SARIMA models
+- GeoPandas for geospatial processing
+- Selenium for web scraping climatic data (not used)
 
-## 📊 Modelos Implementados
+## 📊 Implemented Models
 
-### Modelo Principal (Vector-a-Vector)
+### Main Model (Vector-to-Vector)
 
-- Red neuronal que mapea características geográficas/climáticas a características de la variedad
-- Entrenado con datos históricos y validación cruzada
-- Implementado en TensorFlow/Keras
+- Neural network mapping geographic/climatic features to variety characteristics
+- Trained on historical data with cross-validation
+- Implemented using TensorFlow/Keras
 
-### Modelos de Demanda
+### Demand Models
 
-- Modelos SARIMA individuales por variedad de papa
-- Predicción de demanda basada en datos históricos
-- Incluye análisis de estacionalidad y tendencias
+- Individual SARIMA models for each potato variety
+- Demand forecasting based on historical data
+- Includes seasonal and trend analysis
 
-## 📁 Datos Utilizados
+## 📁 Data Used
 
-- Datos geoespaciales de distritos peruanos
-- Registros históricos de cultivo (SISAGRI)
-- Datos climáticos y meteorológicos
-- Características de variedades de papa (basado en investigación científica)
-- Datos históricos de precios y volumen de mercado
+- Geospatial data for Peruvian districts
+- Historical crop records (SISAGRI)
+- Climatic and meteorological data
+- Potato variety characteristics (based on scientific research)
+- Historical price and market volume data
 
-## 💡 Características Principales
+## 💡 Key Features
 
-- Predicción de rendimiento por distrito y variedad
-- Análisis de riesgo de tizón tardío
-- Pronóstico de demanda y precios
-- Mapeo de zonas óptimas para cultivo
-- Análisis de factores climáticos y geográficos
+- Yield prediction by district and variety
+- Late blight risk analysis
+- Demand and price forecasting
+- Mapping of optimal cultivation zones
+- Analysis of climatic and geographic factors
 
-## 🔄 Flujo de Datos
+## 🔄 Data Workflow
 
-- Procesamiento de datos geográficos y climáticos
-- Análisis y limpieza de datos históricos de las variedades de acuerdo a nuestras nesecidades
-- Hacer un join entre las historia de las variedades con la historia climatologica y otros factores como lo es le tizon tardio
-- Entrenamiento de modelos predictivos
-- Generación de predicciones y recomendaciones
-- Integración con backend para servicio en producción
+1. Processing of geographic and climatic data
+2. Analysis and cleaning of historical variety data based on project needs
+3. Joining variety histories with climatological and other factors, such as late blight
+4. Training predictive models
+5. Generating predictions and recommendations
+6. Integration with backend for production service
 
-## 📚 Investigación Base
+## 📚 Research Base
 
-- Características de variedades basadas en papers científicos
-- Metodología de análisis de riesgo validada
-- Modelos de predicción fundamentados en literatura agrícola
+- Variety characteristics based on scientific papers
+- Validated risk analysis methodology
+- Prediction models grounded in agricultural literature
 
-## 🛠️ Mantenimiento
-Los siguientes componentes requieren actualización periódica:
+## 🛠️ Maintenance
+The following components require periodic updates:
 
-- Datos climáticos (actualización mensual)
-- Precios y volúmenes de mercado (actualización semanal)
-- Modelos SARIMA (reentrenamiento trimestral)
-- Modelo principal (reentrenamiento anual)
+- Climatic data (monthly updates)
+- Market prices and volumes (weekly updates)
+- SARIMA models (quarterly retraining)
+- Main model (annual retraining)
 
-## 👥 Contribuciones
-El proyecto es resultado de investigación extensiva y colaboración entre expertos en:
+## 👥 Contributions
+This project is the result of extensive research and collaboration between experts in:
 
-- Ciencia de datos
-- Agronomía
-- Climatología
-- Análisis geoespacial
+- Data Science
+- Agronomy
+- Climatology
+- Geospatial Analysis
 
-Para más información sobre componentes específicos, consultar la documentación en cada subcarpeta del proyecto.
+For more information on specific components, refer to the documentation in each subfolder of the project.

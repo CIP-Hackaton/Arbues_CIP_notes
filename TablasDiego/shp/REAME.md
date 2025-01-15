@@ -1,45 +1,47 @@
-# Documentación del archivo `BrutoaConsiso.ipynb`
+# Documentation of the `BrutoaConsiso.ipynb` File
 
-## Archivos Requeridos
-1. **Temperatura mínima:** Carpeta `T_MIN_NEW` con archivos `.shp` (mensuales).
-2. **Temperatura máxima:** Carpeta `T_MAX_NEW` con archivos `.shp` (mensuales).
-3. **Precipitación:** Carpeta `PRECIPI` con archivos `.shp` (mensuales).
-4. **Clasificación climática:** Archivo `CLAS_CLIMA/clasificacion_climatica.shp`.
-5. **Erosión:** Carpeta `EROSION` con subcarpetas por año y archivos `.shp`.
+## Required Files
 
----
-
-## Flujo Interno
-
-### Procesamiento General
-1. Leer datos `.shp` con `GeoPandas`.
-2. Limpiar datos eliminando valores nulos o inconsistentes.
-3. Calcular promedio ponderado (por área) de la variable de interés.
-4. Consolidar resultados en tablas.
-
-### Variables Específicas
-- **Temperatura mínima/máxima y precipitación:**
-  - Promedios calculados por mes/distrito.
-  - Generación de tablas por meses.
-  - Mapas temáticos de Perú por distritos.
-  
-- **Clasificación climática:**
-  - Identificación de la clasificación climática dominante en cada distrito.
-  - Generación de mapas temáticos.
-
-- **Erosión:**
-  - Procesamiento anual por distrito.
-  - Cálculo de promedio ponderado de erosión entre años.
+1. **Minimum Temperature:** Folder `T_MIN_NEW` with `.shp` files (monthly).
+2. **Maximum Temperature:** Folder `T_MAX_NEW` with `.shp` files (monthly).
+3. **Precipitation:** Folder `PRECIPI` with `.shp` files (monthly).
+4. **Climate Classification:** File `CLAS_CLIMA/clasificacion_climatica.shp`.
+5. **Erosion:** Folder `EROSION` with subfolders by year and `.shp` files.
 
 ---
 
-## Exportaciones Finales
-1. **Temperatura mínima:** `temperaturas_promedio_todos_meses.csv`
-2. **Temperatura máxima:** `temperaturas_maximas_promedio_todos_meses.csv`
-3. **Precipitación:** `Precipitacion_promedio_todos_meses.csv`
-4. **Clasificación climática:**
+## Internal Workflow
+
+### General Processing
+1. Read `.shp` files using `GeoPandas`.
+2. Clean data by removing null or inconsistent values.
+3. Calculate area-weighted averages for the variable of interest.
+4. Consolidate results into tables.
+
+### Specific Variables
+- **Minimum/Maximum Temperature and Precipitation:**
+  - Calculate monthly/district averages.
+  - Generate tables by months.
+  - Create thematic maps of Peru by districts.
+
+- **Climate Classification:**
+  - Identify the dominant climate classification for each district.
+  - Generate thematic maps.
+
+- **Erosion:**
+  - Process data annually by district.
+  - Calculate area-weighted erosion averages across years.
+
+---
+
+## Final Exports
+
+1. **Minimum Temperature:** `temperaturas_promedio_todos_meses.csv`
+2. **Maximum Temperature:** `temperaturas_maximas_promedio_todos_meses.csv`
+3. **Precipitation:** `Precipitacion_promedio_todos_meses.csv`
+4. **Climate Classification:**
    - `clasificacion_climatica_distritos.csv`
-   - Mapas: `mapa_sin_leyenda.png`, `leyenda_clasificacion_climatica.png`
-5. **Erosión:**
+   - Maps: `mapa_sin_leyenda.png`, `leyenda_clasificacion_climatica.png`
+5. **Erosion:**
    - `erosion_por_anos.csv`
    - `erosion_promedio.csv`
