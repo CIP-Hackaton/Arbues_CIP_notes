@@ -4,9 +4,9 @@ Este notebook procesa y analiza datos geoespaciales relacionados con el riesgo d
 
 #### Archivos Necesarios
 
-- `S_2014.asc`, `S_2015.asc`, `S_2016.asc` - Archivos raster con datos de riesgo
+- `S_2014.asc`, `S_2015.asc`, `S_2016.asc` - Archivos raster con datos de presencial del Tizon Tardio
 - `distritos-peru@bogota-laburbano.geojson` - Archivo con límites de distritos
-- `consolidado_tizon_distritos.csv` - Archivo de salida con resultados
+- `consolidado_tizon_distritos.csv` - Archivo de presencia del tizon por distrito
 
 #### Estructura y Funcionalidad
 

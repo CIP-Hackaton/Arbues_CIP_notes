@@ -29,6 +29,6 @@ Este notebook realiza el análisis y procesamiento de datos de cultivos de papa,
 #### Outputs Generados
 
 - `filtrado_papa.csv` - Datos filtrados de papa
-- `papas_filtradas.csv` - Dataset final procesado
+- `papas_filtradas.csv` - Dataset final procesado con las 6 papas requeridas
 - Visualizaciones y estadísticas descriptivas
 

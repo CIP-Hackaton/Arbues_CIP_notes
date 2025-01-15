@@ -21,11 +21,13 @@ Este notebook procesa y analiza tres conjuntos principales de datos relacionados
     - Procesamiento de datos de variedades de papa
     - Ubicación geográfica (lat/lon)
     - 6012 registros con información de cultivos
+    - No lo usaremso al final
 2. **Análisis de Concentración de Especies**
     
     - Datos por distrito/provincia/departamento
     - Categorización de zonas agrícolas
     - Análisis de fuentes de Sentinel 2B
+    - No lo usaremso al final
 3. **Procesamiento de Nevadas**
     
     - Consolidación de datos mensuales
